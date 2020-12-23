@@ -37,7 +37,7 @@ $subtotal = 0.00;
 <div class="cart content-wrapper">
 	<br>
     <h1>Shopping Cart</h1>
-    <form action="../custMakePayment/CustPayment.php" method="post">
+    <form action="../custMakePayment/custAddress.php" method="post">
         <table border='2'>
             <thead>
                 <tr>
