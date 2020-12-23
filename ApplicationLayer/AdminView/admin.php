@@ -42,6 +42,11 @@ if(isset($_GET['delete'])){
                 <tr>
                     <td scope="col">Runner ID</td>
                     <td scope="col">Runner Name</td>
+                    <td scope="col">License</td>
+                    <td scope="col">Vehicle Type</td>
+                    <td scope="col">Vehicle No</td>
+                    <td scope="col">Phone No</td>
+                    <td scope="col">Address</td>
                     <td scope="col">Action</td>
                 </tr>
                 <tbody>
@@ -53,6 +58,21 @@ if(isset($_GET['delete'])){
               <td><?php echo $row['id']; ?></td>
               <td>
                 <div class="font-weight-bold"><?php echo $row['username']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['R_Runner_License']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['R_Runner_Vehicletype']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['R_Runner_VehicleNo']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['R_Runner_PhoneNo']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['R_Runner_Address']; ?></div>
               </td>
                <td><a input type="hidden" name="id" value="<?=$row['id']?>"><input id="approve" type="submit" class="btn btn-primary mb-2" name="approve" value="Approve"></a><!-- this button will approve the runner login -->
                <a class="btn btn-danger" href="?delete=<?= $row['id']; ?>" >Remove</a></td> <!-- this button will remove the runner login -->
