@@ -23,7 +23,7 @@ class adminController {
         if($admin->accept()){
             $message = "Request Approved";
 		echo "<script type='text/javascript'>alert('$message');
-		window.location = '../ApplicationLayer/AdminView/admin';</script>";
+		window.location = '../ApplicationLayer/AdminView/admin.php';</script>";
         }
     }	
     //to retrieve the approval data of service provider from function acceptsp in adminmodel
@@ -33,7 +33,7 @@ class adminController {
         if($admin->acceptsp()){
             $message = "Request Approved";
         echo "<script type='text/javascript'>alert('$message');
-        window.location = '../ApplicationLayer/AdminView/adminsp';</script>";
+        window.location = '../ApplicationLayer/AdminView/adminsp.php';</script>";
         }
     }   
     //to send the delete request to adminmodel for delete the runner login data in database

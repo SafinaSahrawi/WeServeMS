@@ -42,6 +42,8 @@ if(isset($_GET['delete'])){
                 <tr>
                     <td scope="col">ID</td>
                     <td scope="col">COMPANY NAME</td>
+                    <td scope="col">COMPANY ADDRESS</td>
+                    <td scope="col">COMPANY PHONE NUMBER</td>
                     <td scope="col">Action</td>
                 </tr>
                 <tbody>
@@ -53,6 +55,12 @@ if(isset($_GET['delete'])){
               <td><?php echo $row['id']; ?></td>
               <td>
                 <div class="font-weight-bold"><?php echo $row['S_Company_Name']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['S_CompanyAddress']; ?></div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><?php echo $row['S_ServiceProviderPhoneNo']; ?></div>
               </td>
               <td><a input type="hidden" name="id" value="<?=$row['id']?>"><input id="approve" type="submit" class="btn btn-primary mb-2" name="approve" value="Approve"></a> <!-- this button will approve the service provider login -->
                <a class="btn btn-danger" href="?delete=<?= $row['id']; ?>" >Remove</a></td> <!-- this button will delete the service provider login -->
