@@ -24,10 +24,10 @@ $DeliveryFee = 4.00;
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://www.paypal.com/sdk/js?client-id=AcC0qn_BkGUZfQOzjHsZmBUAWG1WpHY-zJCq5hWxAA9bgiIWK6LUowr_A-LOLB7880tdsrExkk5Tt3G0&currency=MYR">
+  <script src="https://www.paypal.com/sdk/js?client-id=AcC0qn_BkGUZfQOzjHsZmBUAWG1WpHY-zJCq5hWxAA9bgiIWK6LUowr_A-LOLB7880tdsrExkk5Tt3G0&currency=MYR">
         // Required. Replace SB_CLIENT_ID with your sandbox client ID.
     </script>
-	<title>address</title>
+  <title>address</title>
 </head>
 <style>
 body {
@@ -136,9 +136,9 @@ span.price {
 </style>
 <body>
 
-	<div class="container">
+  <div class="container">
       <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b></b></span></h4>
-	 <?php foreach ($data2 as $row2): ?>
+   <?php foreach ($data2 as $row2): ?>
       <p><?=$row2['product_id']?><?=$row2['product_name']?></a><span class="price"><?=$row2['product_price'] * $row2['product_quantity']?></span></p>
       <?php $_SESSION['subtotal'] += $row2['product_price'] * $row2['product_quantity'] + $DeliveryFee; ?>
       <?php $TotalDeliveryFee += $DeliveryFee; ?>
@@ -147,21 +147,21 @@ span.price {
      <hr>
      <p>Total Delivery Fee<span class="price" style="color:black"><b><?=$TotalDeliveryFee?></b></span></p>
      <p>Total <span class="price" style="color:black"><b><?=$_SESSION['subtotal']?></b></span></p>
- 	</div>
+  </div>
 
 
 
 
 
-	<?php foreach ($data as $row) { ?>
+  <?php foreach ($data as $row) { ?>
 
-		<?php $_SESSION['shipping_address'] = $row['cust_add1'] . ', ' . $row['cust_add2'] . ', ' . $row['cust_postal_code'] . ', ' . $row['cust_city'] . ', ' . $row['cust_state'] ?>
+    <?php $_SESSION['shipping_address'] = $row['cust_add1'] . ', ' . $row['cust_add2'] . ', ' . $row['cust_postal_code'] . ', ' . $row['cust_city'] . ', ' . $row['cust_state'] ?>
 
-	<?php } ?>
+  <?php } ?>
 
-	 	 
+     
 
-	<div id="paypal-button-container"></div>
+  <div id="paypal-button-container"></div>
         <script>
             paypal.Buttons({
                 createOrder: function(data, actions) {
