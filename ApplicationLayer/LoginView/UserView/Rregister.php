@@ -35,6 +35,7 @@ list($username_err, $password_err, $confirm_password_err) = $user->Rregister();
     </style>
 </head>
 <body>
+<center>
     <div class="header">
         <h1>WSMS</h1>
         <p>Runner Registration</p>
@@ -76,7 +77,10 @@ list($username_err, $password_err, $confirm_password_err) = $user->Rregister();
             </div>
             <div class="form-group"> 
                 <label>Address</label>
-                <input type="text" name="R_Runner_Address" class="form-control" value="<?php echo $R_Runner_Address; ?>">
+                <input type="text" name="R_Runner_Address" class="form-control" value="<?php echo $R_Runner_Address; ?>" placeholder="Street Address">
+                <input type="text" name="address" class="form-control" value="" placeholder="City">
+                <input type="text" name="address" class="form-control" value="" placeholder="State">
+                <input type="text" name="address" class="form-control" value="" placeholder="Postal/Zip Code">
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
@@ -84,6 +88,7 @@ list($username_err, $password_err, $confirm_password_err) = $user->Rregister();
             </div>
             <p>Already have an account? <a href="http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
         </form>
-    </div>    
+    </div>
+</center>  
 </body>
 </html>
