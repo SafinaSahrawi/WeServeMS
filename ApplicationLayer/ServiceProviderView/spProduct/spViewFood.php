@@ -22,7 +22,7 @@ if(isset($_POST['delete'])){
 
         <br>
 
-        <center><a href="http://localhost/wsms/ApplicationLayer/ServiceProviderView/spProduct/spView.php"><img src="../../../picture/Weserve.jpeg" width="255px" height="225px"alt></a>
+        <center><a href="http://localhost/WeServeMS/ApplicationLayer/ServiceProviderView/spProduct/spView.php"><img src="../../../picture/Weserve.jpeg" width="255px" height="225px"alt></a>
         <p>SERVICE PROVIDER</p></center>
           <input type="hidden" name="sp_id" value="<?=$_SESSION['id']?>">
           <div class="list-group">
@@ -53,14 +53,24 @@ if(isset($_POST['delete'])){
                     <?=$row['name']?></a>
                 </h4>
                 <h5>RM <?=$row['price']?></h5>
+                <div id="accordion">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                See Product Description
+                </button>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  Description
                 <p class="card-text"><?=$row['des']?></p>
               </div>
+              </div>
+            </div>
+
               <div>
               <form action="" method="POST">
               <p class="page-header">
               <span><center>
 
-              <input type="hidden" name="FoodId" value="<?=$row['id']?>"><button type="button" class="btn btn-info" name="view" value="VIEW" onClick="location.href='viewFood.php?FoodId=<?=$row['id']; ?>'" class="button button2">VIEW</button>
+              <input type="hidden" name="FoodId" value="<?=$row['id']?>">
+              <button type="button" class="btn btn-info" name="view" value="VIEW" onClick="location.href='viewFood.php?FoodId=<?=$row['id']; ?>'" class="button button2">VIEW</button>
               <button type="button" onClick="location.href='editFood.php?FoodId=<?=$row['id']; ?>'" value="EDIT" class="btn btn-info">EDIT</button> 
 
               </center></span>

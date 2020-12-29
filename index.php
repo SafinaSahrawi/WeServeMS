@@ -1,4 +1,4 @@
 <?php 
-header("Location:http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+header("Location:http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
 
 ?>
