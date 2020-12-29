@@ -47,6 +47,7 @@ $sprovider="";
               <input type="hidden" name="username" value="<?=$_SESSION['username']?>" >
               <tr>
                 <td colspan="3"><center><b>SERVICE PROVIDER INFORMATION</b></center></td>
+                <td>TESTING</td>
             </tr>
             <tr>
                 <td width="200">Username</td>
