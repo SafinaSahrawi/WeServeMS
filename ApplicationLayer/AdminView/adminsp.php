@@ -42,7 +42,7 @@ if(isset($_GET['delete'])){
                 <tr>
                     <td scope="col">ID</td>
                     <td scope="col">COMPANY NAME</td>
-                    <td scope="col">Action</td>
+                    <td scope="col">Actions</td>
                 </tr>
                 <tbody>
                 <?php
