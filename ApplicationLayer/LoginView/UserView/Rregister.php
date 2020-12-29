@@ -87,6 +87,7 @@ list($username_err, $password_err, $confirm_password_err) = $user->Rregister();
                 <input type="reset" class="btn btn-default" value="Reset">
             </div>
             <p>Already have an account? <a href="http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
+            
         </form>
     </div>
 </center>  
