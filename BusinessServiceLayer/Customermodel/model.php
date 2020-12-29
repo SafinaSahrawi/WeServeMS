@@ -7,8 +7,8 @@ class Model{
 
     function updateCustomerinfo(){
 
-        $sql = "update customer set C_CustAddress=:C_CustAddress,C_CustPhoneNumber=:C_CustPhoneNumber where username=:username";
-        $args = [':username'=>$this->username,':C_CustAddress'=>$this->C_CustAddress,':C_CustPhoneNumber'=>$this->C_CustPhoneNumber];
+        $sql = "update customer set C_CustAddress=:C_CustAddress,C_CustPhoneNumber=:C_CustPhoneNumber, C_CustCity=:C_CustCity where username=:username";
+        $args = [':username'=>$this->username,':C_CustAddress'=>$this->C_CustAddress,':C_CustPhoneNumber'=>$this->C_CustPhoneNumber, ':C_CustCity'=>$this->C_CustCity];
         return DB::run($sql,$args);
     }
 

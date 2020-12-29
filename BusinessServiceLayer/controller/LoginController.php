@@ -61,16 +61,16 @@ class LoginController{
                             // Redirect type of user to their page
                             $usertype = $row["usertype"];
                             if($usertype == "Customer"){
-                                header("location: http://localhost/wsms/ApplicationLayer/CustomerView/custAddCart/food.php");
+                                header("location: http://localhost/WeServeMS/ApplicationLayer/CustomerView/custAddCart/food.php");
                             }
                             else if($usertype == "Service Provider"){
-                                header("location: http://localhost/wsms/ApplicationLayer/ServiceProviderView/spProduct/spView.php");
+                                header("location: http://localhost/WeServeMS/ApplicationLayer/ServiceProviderView/spProduct/spView.php");
                             }
                             else if($usertype == "Runner"){
-                                header("location: http://localhost/wsms/ApplicationLayer/RunnerView/RunnerDeliveryInfo/RunnerHomepage.php");
+                                header("location: http://localhost/WeServeMS/ApplicationLayer/RunnerView/RunnerDeliveryInfo/RunnerHomepage.php");
                             }
                             else if($usertype == "Admin"){
-                                header("location: http://localhost/wsms/ApplicationLayer/AdminView/admin.php");
+                                header("location: http://localhost/WeServeMS/ApplicationLayer/AdminView/admin.php");
                             }
 
                             else{

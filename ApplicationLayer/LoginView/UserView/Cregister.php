@@ -65,15 +65,15 @@ list($username_err, $password_err, $confirm_password_err) = $user->Cregister();
         <div class="form-group">
             <label>Address</label>
             <input type="text" name="address" class="form-control" value="<?php echo $C_CustAddress; ?>" placeholder="Street Address">
-            <input type="text" name="address" class="form-control" value="<?php echo $C_CustAddress; ?>" placeholder="City">
-            <input type="text" name="address" class="form-control" value="<?php echo $C_CustAddress; ?>" placeholder="State">
-            <input type="text" name="address" class="form-control" value="<?php echo $C_CustAddress; ?>" placeholder="Postal/Zip Code">
+            <input type="text" name="city" class="form-control" value="<?php echo $C_CustCity; ?>" placeholder="City">
+            <input type="text" name="state" class="form-control" value="<?php echo $C_CustState; ?>" placeholder="State">
+            <input type="text" name="postal" class="form-control" value="<?php echo $C_CustPostal; ?>" placeholder="Postal/Zip Code">
         </div>
         <div class="form-group">
             <input type="submit" class="btn btn-primary" value="Submit">
             <input type="reset" class="btn btn-default" value="Reset">
         </div>
-            <p>Already have an account? <a href="http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
+            <p>Already have an account? <a href="http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
         </form>
     </div>
 </center>   
