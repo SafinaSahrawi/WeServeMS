@@ -75,11 +75,15 @@ list($username_err, $password_err, $confirm_password_err) = $user->SPregister();
             </div>           
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
+                <input type="reset" class="btn btn-default" value="Reset"> 
             </div>
             <p>Already have an account? <a href="http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
         </form>
     </div>
+<<<<<<< Updated upstream
 </center>
+=======
+</center>   
+>>>>>>> Stashed changes
 </body>
 </html>
