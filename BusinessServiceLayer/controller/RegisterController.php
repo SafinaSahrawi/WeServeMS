@@ -91,10 +91,10 @@ class RegisterController{
                     $this->model_class->registerCustomer();
 
                     $this->pdo->commit();
-                    header("location: http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+                    header("location: http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
                 }catch(PDOException $e) {
                     $this->pdo->rollBack();
-                    header("location: http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+                    header("location: http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
                 }
             }
             
@@ -183,10 +183,10 @@ class RegisterController{
                     $this->model_class->registerServiceProvider();
 
                     $this->pdo->commit();
-                    header("location: http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+                    header("location: http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
                 }catch(PDOException $e) {
                     $this->pdo->rollBack();
-                    header("location: http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+                    header("location: http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
                 }
 
             }
@@ -281,10 +281,10 @@ class RegisterController{
                     $this->model_class->registerRunner();
 
                     $this->pdo->commit();
-                    header("location: http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+                    header("location: http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
                 }catch(PDOException $e) {
                     $this->pdo->rollBack();
-                    header("location: http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php");
+                    header("location: http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php");
                 }
 
             }

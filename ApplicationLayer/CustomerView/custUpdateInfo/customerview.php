@@ -22,7 +22,7 @@ $customer="";
         <div class="list-group">
          <a href="../custAddCart/food.php" class="list-group-item">Back To Home Page </a>
            <a href="customerupdate.php" class="list-group-item">Edit </a>
-          <a href="http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php" class="list-group-item">Log Out</a>
+          <a href="http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php" class="list-group-item">Log Out</a>
         </div>
         
     </div>

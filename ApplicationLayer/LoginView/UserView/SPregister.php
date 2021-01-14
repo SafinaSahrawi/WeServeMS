@@ -33,6 +33,7 @@ list($username_err, $password_err, $confirm_password_err) = $user->SPregister();
     </style>
 </head>
 <body>
+<center>
     <div class="header">
         <h1>WSMS</h1>
         <p>Service Provider Registration</p>
@@ -63,17 +64,26 @@ list($username_err, $password_err, $confirm_password_err) = $user->SPregister();
             <div class="form-group">
                 <label>Company Name</label>
                 <input type="text" name="S_Company_Name" class="form-control" value="<?php echo $S_Company_Name; ?>">
+                
             </div>
             <div class="form-group">
                 <label>Company Address</label>
-                <input type="text" name="S_CompanyAddress" class="form-control" value="<?php echo $S_CompanyAddress; ?>">
+                <input type="text" name="S_CompanyAddress" class="form-control" value="<?php echo $S_CompanyAddress; ?>" placeholder="Street Address">
+                <input type="text" name="address" class="form-control" value="" placeholder="City">
+                <input type="text" name="address" class="form-control" value="" placeholder="State">
+                <input type="text" name="address" class="form-control" value="" placeholder="Postal/Zip Code">
             </div>           
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
+                <input type="reset" class="btn btn-default" value="Reset"> 
             </div>
-            <p>Already have an account? <a href="http://localhost/wsms/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
+            <p>Already have an account? <a href="http://localhost/WeServeMS/ApplicationLayer/LoginView/UserView/login.php">Login here</a>.</p>
         </form>
-    </div>    
+    </div>
+<<<<<<< Updated upstream
+</center>
+=======
+</center>   
+>>>>>>> Stashed changes
 </body>
 </html>

@@ -58,7 +58,7 @@ list($username_err, $password_err) = $user->Login();
             <a href="SPregister.php">Sign up as service provider</a><br>
             <a href="Rregister.php">Sign up as runner</a>
             <br>
-            <a href="http://localhost/wsms/ApplicationLayer/AdminView/admin.php">Admin</a>
+            <a href="http://localhost/WeServeMS/ApplicationLayer/AdminView/admin.php">Admin</a>
         </form>
     </div>
 </body>
