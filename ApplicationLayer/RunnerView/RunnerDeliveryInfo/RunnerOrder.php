@@ -49,6 +49,8 @@ if (isset($_GET['approve'])){
                     <td scope="col">Product Name</td>
                     <td scope="col">Quantity</td>
                     <td scope="col">Action</td>
+                    <td scope="col">Track Location</td>
+
                 </tr>
                 <tbody>
                 <?php
@@ -64,6 +66,9 @@ if (isset($_GET['approve'])){
               <td><form action="" method="POST">
          <span onclick="location.href='RunnerDeliveredOrder.php?id=<?=$row['id']?>'" value="add">&nbsp;
           <i class="btn btn-success"> Accept job</i><!-- this button will bring to runner deliver order page where runner can update the order status -->
+          </span>
+           <button>
+            <a href="https://www.google.com/maps/dir/''/''/@4.140634,109.6181485,6z/data=!4m2!4m1!3e3">Map Customer Address</a></button>
           </span>
                 </form></td>
             </tr> 
