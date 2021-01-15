@@ -58,7 +58,6 @@ if(isset($_POST['delete'])){
                 See Product Description
                 </button>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                  Description
                 <p class="card-text"><?=$row['des']?></p>
               </div>
               </div>

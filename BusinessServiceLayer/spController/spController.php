@@ -234,11 +234,10 @@ class spController{
         }
     }
 
-  function viewOrder(){
+    function viewCartOrder(){
     $order = new spModel();
     return $order->viewCartOrder();
   }
-
 
   function acceptOrder(){
     $order = new spModel();

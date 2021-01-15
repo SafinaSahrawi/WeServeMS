@@ -56,9 +56,22 @@ if(isset($_POST['acceptOrder'])){
               </tr></thead>
               <tbody>
               <?php
+              foreach($data as $row){
+               echo "<tr>"
+                       . "<td><center>".$row['id']."</center></td>"
+                       . "<td>".$row['username']."</td>"
+                       . "<td>".$row['C_CustAddress']."</td>"
+                       . "<td>".$row['C_CustPhoneNumber']."</td>";
+                       //. "<td><center>".$row['payment_complete']."</center></td>"//;
+               ?>
+                <td colspan="2">
+                  <center><button type="submit" name="acceptOrder" value="acceptOrder" class="btn btn-info">Accept</button></center>
+            </td>
+            </div>
             foreach($data as $row){
                echo "<tr>"
                        . "<td><center>".$row['id']."</center></td>"
+                       . "<td><center>".$row['username']."</center></td>"
                        . "<td>".$row['C_CustAddress']."</td>"
                        . "<td>".$row['C_CustPhoneNumber']."</td>"
                        . "<td><center>".$row['payment_complete']."</center></td>";

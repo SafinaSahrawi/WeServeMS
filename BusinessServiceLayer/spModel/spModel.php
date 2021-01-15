@@ -168,10 +168,7 @@ class spModel{
 
 
     function viewCartOrder(){
-        $sql = "SELECT cart.id, customer.C_CustAddress, customer.C_CustPhoneNumber, cart.customer_id, cart.payment_complete,
-        cart.sp_confirm
-                FROM customer
-                RIGHT JOIN cart ON customer.id = cart.customer_id AND cart.payment_complete = 0";
+        $sql = "SELECT * FROM customer INNER JOIN cart ON customer.id = cart.customer_id";
         return DB::run($sql);
     }
 
